@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Drafts (keep private until ready)
+drafts/
+*.draft.md
+*.draft.html
+
+# Temp files
+*.tmp
+*~
+
