@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deletion - ZenMind</title>
+    <meta name="description" content="How to permanently delete your ZenMind account and all associated data">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: #374151;
+            background: #f9fafb;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #dc2626;
+            margin-bottom: 0.5rem;
+            border-bottom: 3px solid #ef4444;
+            padding-bottom: 1rem;
+        }
+
+        .last-updated {
+            color: #6b7280;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            color: #1e40af;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            color: #2563eb;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #1e40af;
+            text-decoration: underline;
+        }
+
+        strong {
+            color: #1f2937;
+            font-weight: 600;
+        }
+
+        .warning-box {
+            background: #fef2f2;
+            border: 2px solid #dc2626;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .warning-box h3 {
+            margin-top: 0;
+            color: #dc2626;
+        }
+
+        .info-box {
+            background: #eff6ff;
+            border-left: 4px solid #2563eb;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .step-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .step-box .step-number {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background: #2563eb;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 32px;
+            font-weight: 600;
+            margin-right: 0.75rem;
+        }
+
+        .step-box h3 {
+            display: inline;
+            margin: 0;
+            color: #1e40af;
+        }
+
+        .contact-info {
+            background: #eff6ff;
+            border-left: 4px solid #2563eb;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .back-home {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 12px 24px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+
+        .back-home:hover {
+            background: #1e40af;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+
+            .back-home {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🗑️ Account Deletion Guide</h1>
+        <p class="last-updated"><strong>Last Updated:</strong> January 21, 2025</p>
+
+        <div class="warning-box">
+            <h3>⚠️ Warning: Permanent Action</h3>
+            <p>Deleting your ZenMind account is <strong>permanent and cannot be undone</strong>. This action will:</p>
+            <ul>
+                <li>Permanently delete your account and login credentials</li>
+                <li>Remove all your data including chat sessions, mood ratings, thought patterns, goals, and values</li>
+                <li>Cancel any active subscriptions</li>
+                <li>Erase all your insights, journals, and exercises</li>
+            </ul>
+            <p><strong>There is no way to recover your data after deletion.</strong></p>
+        </div>
+
+        <h2>Who Can Delete Their Account?</h2>
+        <p>Only <strong>registered users</strong> (those who signed up with email, Apple Sign In, or social media) can delete their accounts.</p>
+        <p>If you're using ZenMind as a guest (anonymous user), you don't have an account to delete. You can only <a href="data-deletion.html">delete your local data</a> instead.</p>
+
+        <h2>How to Delete Your Account</h2>
+
+        <div class="step-box">
+            <span class="step-number">1</span>
+            <h3>Open ZenMind App</h3>
+            <p style="margin-top: 1rem;">Launch the ZenMind mobile application on your iOS or Android device.</p>
+        </div>
+
+        <div class="step-box">
+            <span class="step-number">2</span>
+            <h3>Go to Your Profile</h3>
+            <p style="margin-top: 1rem;">Tap on your profile icon or navigate to the <strong>Profile</strong> section of the app.</p>
+        </div>
+
+        <div class="step-box">
+            <span class="step-number">3</span>
+            <h3>Access Data & Privacy Settings</h3>
+            <p style="margin-top: 1rem;">In your Profile, look for and tap on <strong>"Your Data & Privacy"</strong> or <strong>"Data & Privacy"</strong> menu option.</p>
+        </div>
+
+        <div class="step-box">
+            <span class="step-number">4</span>
+            <h3>Tap "Delete Account"</h3>
+            <p style="margin-top: 1rem;">Scroll down to find the <strong>"Delete Account"</strong> button (displayed with a red/warning color). Tap on it.</p>
+            <p style="margin-top: 0.5rem;"><em>Note: This button will be disabled if you're using the app as a guest user.</em></p>
+        </div>
+
+        <div class="step-box">
+            <span class="step-number">5</span>
+            <h3>Review What Will Be Deleted</h3>
+            <p style="margin-top: 1rem;">The app will show you a summary of all data that will be permanently deleted, including:</p>
+            <ul style="margin-top: 0.5rem;">
+                <li>Your account and login credentials</li>
+                <li>Number of chat sessions</li>
+                <li>Number of thought patterns</li>
+                <li>Number of mood ratings</li>
+                <li>Number of goals and values</li>
+                <li>Total items to be removed</li>
+            </ul>
+        </div>
+
+        <div class="step-box">
+            <span class="step-number">6</span>
+            <h3>Confirm by Typing "DELETE"</h3>
+            <p style="margin-top: 1rem;">To prevent accidental deletion, you'll be asked to type <strong>"DELETE"</strong> (in capital letters) to confirm.</p>
+            <p style="margin-top: 0.5rem;">Type <code style="background: #f3f4f6; padding: 2px 6px; border-radius: 3px;">DELETE</code> exactly as shown and tap the confirm button.</p>
+        </div>
+
+        <div class="step-box">
+            <span class="step-number">7</span>
+            <h3>Account Deletion Process</h3>
+            <p style="margin-top: 1rem;">The app will:</p>
+            <ol style="margin-top: 0.5rem;">
+                <li>Delete all your local data from your device</li>
+                <li>Remove your account from our authentication system</li>
+                <li>Clean up any server-side data associated with your account</li>
+                <li>Cancel any active subscriptions</li>
+            </ol>
+            <p style="margin-top: 0.5rem;">This process usually takes a few seconds.</p>
+        </div>
+
+        <div class="step-box">
+            <span class="step-number">8</span>
+            <h3>Account Deleted Successfully</h3>
+            <p style="margin-top: 1rem;">Once complete, you'll see a confirmation message. You'll be automatically signed out, and your account will be permanently deleted.</p>
+            <p style="margin-top: 0.5rem;"><strong>You can create a new account anytime if you wish to use ZenMind again.</strong></p>
+        </div>
+
+        <h2>What Happens After Deletion?</h2>
+        <ul>
+            <li><strong>Immediate:</strong> Your account is deactivated and you're signed out</li>
+            <li><strong>Within 24 hours:</strong> All your data is permanently removed from our systems</li>
+            <li><strong>Subscriptions:</strong> Any active subscriptions are cancelled (no further charges)</li>
+            <li><strong>Data Recovery:</strong> Your data cannot be recovered after deletion</li>
+        </ul>
+
+        <h2>Alternative: Delete Data Only</h2>
+        <div class="info-box">
+            <p><strong>Don't want to delete your account?</strong></p>
+            <p>If you want to keep your account but remove all your data (chat history, moods, insights, etc.), you can use the <strong>"Delete My Data"</strong> feature instead.</p>
+            <p><a href="data-deletion.html">Learn how to delete your data without deleting your account →</a></p>
+        </div>
+
+        <h2>Need Help?</h2>
+        <div class="contact-info">
+            <p><strong>Contact Support</strong></p>
+            <p>If you're having trouble deleting your account or have questions, please contact us:</p>
+            <p><strong>Email:</strong> <a href="mailto:bora.nikolai.mindwise@gmail.com">bora.nikolai.mindwise@gmail.com</a></p>
+            <p><strong>Location:</strong> Bulgaria</p>
+            <p>We typically respond within 24-48 hours.</p>
+        </div>
+
+        <h2>Related Resources</h2>
+        <ul>
+            <li><a href="data-deletion.html">How to Delete Your Data (Without Deleting Account)</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+            <li><a href="index.html">Legal Documents Home</a></li>
+        </ul>
+
+        <hr style="margin: 3rem 0; border: none; border-top: 1px solid #e5e7eb;">
+
+        <p style="text-align: center; color: #6b7280; font-size: 0.9rem;">
+            <strong>Your privacy and data ownership are important to us.</strong><br>
+            You have complete control over your data and account at all times.
+        </p>
+
+        <div style="text-align: center;">
+            <a href="index.html" class="back-home">← Back to Legal Home</a>
+        </div>
+    </div>
+</body>
+</html>

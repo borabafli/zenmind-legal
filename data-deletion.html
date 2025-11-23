@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Deletion - ZenMind</title>
+    <meta name="description" content="How to delete your personal data from ZenMind without deleting your account">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: #374151;
+            background: #f9fafb;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ef4444;
+            margin-bottom: 0.5rem;
+            border-bottom: 3px solid #f87171;
+            padding-bottom: 1rem;
+        }
+
+        .last-updated {
+            color: #6b7280;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            color: #1e40af;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            color: #2563eb;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #1e40af;
+            text-decoration: underline;
+        }
+
+        strong {
+            color: #1f2937;
+            font-weight: 600;
+        }
+
+        .warning-box {
+            background: #fef3c7;
+            border: 2px solid #f59e0b;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .warning-box h3 {
+            margin-top: 0;
+            color: #d97706;
+        }
+
+        .info-box {
+            background: #eff6ff;
+            border-left: 4px solid #2563eb;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .success-box {
+            background: #f0fdf4;
+            border-left: 4px solid #10b981;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .step-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .step-box .step-number {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background: #2563eb;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 32px;
+            font-weight: 600;
+            margin-right: 0.75rem;
+        }
+
+        .step-box h3 {
+            display: inline;
+            margin: 0;
+            color: #1e40af;
+        }
+
+        .data-types {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .data-types ul {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .contact-info {
+            background: #eff6ff;
+            border-left: 4px solid #2563eb;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .back-home {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 12px 24px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+
+        .back-home:hover {
+            background: #1e40af;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+
+            .back-home {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🗂️ Data Deletion Guide</h1>
+        <p class="last-updated"><strong>Last Updated:</strong> January 21, 2025</p>
+
+        <div class="info-box">
+            <p><strong>What's the difference?</strong></p>
+            <p><strong>Delete My Data:</strong> Removes all your personal data (chat history, moods, insights, etc.) but keeps your account active. You can continue using ZenMind with a fresh start.</p>
+            <p><strong>Delete Account:</strong> Permanently deletes both your data AND your account/login credentials. You'll need to create a new account to use ZenMind again.</p>
+            <p>This guide covers <strong>"Delete My Data"</strong> only. To delete your entire account, see the <a href="account-deletion.html">Account Deletion Guide</a>.</p>
+        </div>
+
+        <h2>What Data Will Be Deleted?</h2>
+        <div class="data-types">
+            <p>When you use "Delete My Data," the following information will be permanently removed from your device:</p>
+            <ul>
+                <li><strong>Chat Sessions:</strong> All conversations with Anu (our AI companion)</li>
+                <li><strong>Thought Patterns:</strong> Your recorded thoughts and reflections</li>
+                <li><strong>Mood Ratings:</strong> All mood check-ins and emotional tracking data</li>
+                <li><strong>Goals:</strong> Personal goals you've set</li>
+                <li><strong>Values:</strong> Core values you've identified</li>
+                <li><strong>Exercises:</strong> Completed mindfulness and wellness exercises</li>
+                <li><strong>Journal Entries:</strong> Personal journal entries and notes</li>
+                <li><strong>Insights:</strong> AI-generated insights and recommendations</li>
+            </ul>
+            <p><strong>What's NOT deleted:</strong> Your account credentials (email/login), subscription status, and account settings.</p>
+        </div>
+
+        <div class="warning-box">
+            <h3>⚠️ Important: This Action Cannot Be Undone</h3>
+            <p>Once you delete your data:</p>
+            <ul>
+                <li>All your data is permanently removed from your device</li>
+                <li><strong>There is no backup</strong> - we don't store your sensitive data on our servers</li>
+                <li><strong>Data cannot be recovered</strong> - this deletion is permanent</li>
+                <li>You'll start with a completely fresh slate in the app</li>
+            </ul>
+        </div>
+
+        <h2>Who Can Delete Their Data?</h2>
+        <p><strong>Everyone!</strong> Both registered users and guest users (anonymous) can delete their data. This feature is available to all ZenMind users.</p>
+
+        <h2>How to Delete Your Data</h2>
+
+        <div class="step-box">
+            <span class="step-number">1</span>
+            <h3>Open ZenMind App</h3>
+            <p style="margin-top: 1rem;">Launch the ZenMind mobile application on your iOS or Android device.</p>
+        </div>
+
+        <div class="step-box">
+            <span class="step-number">2</span>
+            <h3>Go to Your Profile</h3>
+            <p style="margin-top: 1rem;">Tap on your profile icon or navigate to the <strong>Profile</strong> section of the app.</p>
+        </div>
+
+        <div class="step-box">
+            <span class="step-number">3</span>
+            <h3>Access Data & Privacy Settings</h3>
+            <p style="margin-top: 1rem;">In your Profile, look for and tap on <strong>"Your Data & Privacy"</strong> or <strong>"Data & Privacy"</strong> menu option.</p>
+        </div>
+
+        <div class="step-box">
+            <span class="step-number">4</span>
+            <h3>Tap "Delete My Data"</h3>
+            <p style="margin-top: 1rem;">Scroll down to find the <strong>"Delete My Data"</strong> button. Tap on it.</p>
+            <p style="margin-top: 0.5rem;"><em>Note: This is different from "Delete Account" - make sure you select the correct option!</em></p>
+        </div>
+
+        <div class="step-box">
+            <span class="step-number">5</span>
+            <h3>Review Data Summary</h3>
+            <p style="margin-top: 1rem;">The app will show you exactly what will be deleted, including:</p>
+            <ul style="margin-top: 0.5rem;">
+                <li>Number of chat sessions</li>
+                <li>Number of thought patterns</li>
+                <li>Number of mood ratings</li>
+                <li>Number of goals</li>
+                <li>Number of values</li>
+                <li>Total number of items to be removed</li>
+            </ul>
+            <p style="margin-top: 0.5rem;">Example: <em>"You're about to delete all your data: • 15 chat sessions • 8 thought patterns • 23 mood ratings • 3 goals • 5 values. Total: 54 items. This action cannot be undone."</em></p>
+        </div>
+
+        <div class="step-box">
+            <span class="step-number">6</span>
+            <h3>Confirm First Time</h3>
+            <p style="margin-top: 1rem;">Tap <strong>"Continue"</strong> to proceed to the final confirmation.</p>
+        </div>
+
+        <div class="step-box">
+            <span class="step-number">7</span>
+            <h3>Final Confirmation</h3>
+            <p style="margin-top: 1rem;">You'll see a second confirmation dialog asking "Are You Sure?"</p>
+            <p style="margin-top: 0.5rem;">The message will remind you: <em>"This will permanently delete all your insights, moods, goals, and chat history. This cannot be undone."</em></p>
+            <p style="margin-top: 0.5rem;">Tap <strong>"Delete Everything"</strong> to confirm.</p>
+        </div>
+
+        <div class="step-box">
+            <span class="step-number">8</span>
+            <h3>Deletion Process</h3>
+            <p style="margin-top: 1rem;">The app will:</p>
+            <ol style="margin-top: 0.5rem;">
+                <li>Show a "Deleting Data" progress indicator</li>
+                <li>Remove all items from your device storage</li>
+                <li>Clear all cached data</li>
+            </ol>
+            <p style="margin-top: 0.5rem;">This process usually takes just a few seconds.</p>
+        </div>
+
+        <div class="step-box">
+            <span class="step-number">9</span>
+            <h3>Data Deleted Successfully</h3>
+            <p style="margin-top: 1rem;">You'll see a success message confirming what was deleted:</p>
+            <p style="margin-top: 0.5rem;"><em>"Successfully deleted all your data: • X chat sessions • X thought patterns • X mood ratings • Plus exercises, journals, goals, values, and more. Total: X items removed"</em></p>
+            <p style="margin-top: 0.5rem;">Tap <strong>"OK"</strong> to return to the app with a fresh start.</p>
+        </div>
+
+        <h2>What Happens After Data Deletion?</h2>
+        <div class="success-box">
+            <ul>
+                <li><strong>Immediate:</strong> All your data is removed from your device</li>
+                <li><strong>Account Status:</strong> Your account remains active and logged in</li>
+                <li><strong>Subscription:</strong> Your subscription status is unchanged</li>
+                <li><strong>Fresh Start:</strong> You can immediately start using ZenMind again with empty history</li>
+                <li><strong>No Recovery:</strong> Deleted data cannot be restored</li>
+            </ul>
+        </div>
+
+        <h2>Privacy & Data Storage</h2>
+        <div class="info-box">
+            <p><strong>How ZenMind Handles Your Data:</strong></p>
+            <ul>
+                <li><strong>Local Storage:</strong> All your sensitive data (chat history, moods, journals) is stored locally on your device</li>
+                <li><strong>No Server Backups:</strong> We don't keep backups of your personal data on our servers</li>
+                <li><strong>AI Processing:</strong> When you chat with Anu, messages are sent securely to our AI service only to generate responses in real-time. They are not stored permanently.</li>
+                <li><strong>Encryption:</strong> Your data is encrypted both in transit and at rest on your device</li>
+                <li><strong>Complete Control:</strong> You own your data and can delete it anytime</li>
+            </ul>
+            <p>Learn more in our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+        </div>
+
+        <h2>Alternative: Delete Entire Account</h2>
+        <div class="info-box">
+            <p><strong>Want to delete both your data AND account?</strong></p>
+            <p>If you want to completely remove your ZenMind account along with all data, use the <strong>"Delete Account"</strong> feature instead.</p>
+            <p><a href="account-deletion.html">Learn how to delete your account →</a></p>
+        </div>
+
+        <h2>Need Help?</h2>
+        <div class="contact-info">
+            <p><strong>Contact Support</strong></p>
+            <p>If you're having trouble deleting your data or have questions, please contact us:</p>
+            <p><strong>Email:</strong> <a href="mailto:bora.nikolai.mindwise@gmail.com">bora.nikolai.mindwise@gmail.com</a></p>
+            <p><strong>Location:</strong> Bulgaria</p>
+            <p>We typically respond within 24-48 hours.</p>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>Can I recover my data after deletion?</h3>
+        <p>No. Once deleted, your data is permanently removed and cannot be recovered. We don't maintain backups of your personal data on our servers.</p>
+
+        <h3>Will deleting data cancel my subscription?</h3>
+        <p>No. Deleting your data does not affect your subscription status. You'll remain subscribed to ZenMind Premium (if applicable) and can continue using all premium features.</p>
+
+        <h3>What's the difference between "Delete My Data" and "Delete Account"?</h3>
+        <p><strong>Delete My Data:</strong> Removes all your personal content but keeps your account active. You can continue using ZenMind with the same login.</p>
+        <p><strong>Delete Account:</strong> Permanently deletes both your data AND your account. You'll be signed out and need to create a new account to use ZenMind again.</p>
+
+        <h3>Can I delete specific items instead of everything?</h3>
+        <p>Currently, the "Delete My Data" feature removes all your data at once. If you want to delete specific items (like individual chat sessions or mood entries), you can do so from within those respective sections of the app.</p>
+
+        <h3>Does this affect other devices?</h3>
+        <p>Data deletion only affects the device you're using. Since most data is stored locally on your device, data on other devices (if you've logged in elsewhere) won't be automatically deleted.</p>
+
+        <h2>Related Resources</h2>
+        <ul>
+            <li><a href="account-deletion.html">How to Delete Your Account</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+            <li><a href="index.html">Legal Documents Home</a></li>
+        </ul>
+
+        <hr style="margin: 3rem 0; border: none; border-top: 1px solid #e5e7eb;">
+
+        <p style="text-align: center; color: #6b7280; font-size: 0.9rem;">
+            <strong>Your privacy matters to us.</strong><br>
+            You have complete control over your data at all times.
+        </p>
+
+        <div style="text-align: center;">
+            <a href="index.html" class="back-home">← Back to Legal Home</a>
+        </div>
+    </div>
+</body>
+</html>
